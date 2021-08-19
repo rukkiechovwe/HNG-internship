@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNG task2 - Ufuoma</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 20px;
+      }
+      .logo-div {
+        width: 50px;
+        height: 50px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      p{
+         padding: 10px 0;
+      }
+      h1 {
+        font-size: 26px;
+        padding: 15px 0;
+        line-height: 32px;
+        font-family: "Merriweather", serif;
+        color: #222222;
+      }
+      @media screen and (min-width: 350px) {
+        h1 {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="logo-div">
+        <a href="https://training.zuri.team/"
+          ><img src="./index.png" alt="hng"
+        /></a>
+      </div>
+      <p>A program that prints your name using Javascript.</p>
+      <h1 id="name">My Name</h1>
+    </main>
+
+    <script>
+      document.getElementById("name").innerHTML = "OGHENECHOVWE UFUOMA";
+    </script>
+  </body>
+</html>
