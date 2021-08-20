@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+  line-height: 25px;
+  font-size: 13.4px;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background: aliceblue;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.m-r {
+  margin-right: 15px;
+}
+.p-x {
+  padding: 0 5px;
+}
+.p-y {
+  padding: 10px 0;
+}
+.more {
+  padding-top: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.sans {
+  font-family: "Open Sans", sans-serif;
+}
+.logo-div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 25px;
+}
+.git-div {
+  width: 25px;
+  height: 25px;
+  margin: 0 6px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+main {
+  width: 100%;
+  max-width: 816px;
+  padding-top: 20px;
+
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 36px #9f9f9f3d;
+  border-radius: 10px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cell {
+  padding: 10px;
+  vertical-align: top;
+}
+.header {
+  padding-top: 15px;
+}
+a {
+  color: #3d85c6;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #222222;
+}
+h1 {
+  font-size: 26px;
+  padding-bottom: 15px;
+  line-height: 32px;
+}
+@media screen and (min-width: 350px) {
+  h1 {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+}
+h2 {
+  color: #3d85c6;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 0 9px;
+}
+h3 {
+  padding-top: 30px;
+}
+h4 {
+  color: #3d85c6;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-top: 40px;
+}
+h5 {
+  padding-top: 5px;
+}
+ul {
+  padding-top: 12px;
+  margin-left: 25px;
+}
+li {
+  padding: 6px 0;
+}
+.no-list li {
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    flex-direction: row;
+  }
+  .l-cell {
+    max-width: 60%;
+  }
+}

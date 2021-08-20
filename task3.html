@@ -4,126 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume - Ufuoma</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
-      *,
-      *::after,
-      *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        display: flex;
-        justify-content: center;
-        font-family: "Merriweather", serif;
-      }
-      .m-r {
-        margin-right: 15px;
-      }
-      .top {
-        padding-top: 17px;
-      }
-      .sans {
-        font-family: "Open Sans", sans-serif;
-      }
-      .logo-div{
-         width:50px;
-         height:50px;
-      }
-      img{
-         width: 100%;
-         height: 100%;
-         border-radius: 50%;
-      }
-      main {
-        width: 100%;
-        max-width: 816px;
-        padding-top: 20px;
-        line-height: 25px;
-        font-size: 13.4px;
-        color: #3b3b3b;
-        padding: 20px;
-      }
-      section {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .cell {
-        padding: 10px;
-        vertical-align: top;
-      }
-      .header {
-        padding-top: 15px;
-      }
-      a {
-        color: #3d85c6;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5 {
-        font-family: "Merriweather", serif;
-        color: #222222;
-      }
-      h1 {
-        font-size: 26px;
-        padding-bottom: 15px;
-        line-height: 32px;
-      }
-      @media screen and (min-width: 350px) {
-        h1 {
-          font-size: 30px;
-          padding-bottom: 15px;
-        }
-      }
-      h2 {
-        color: #3d85c6;
-        font-size: 16px;
-        font-weight: 600;
-        padding: 12px 0 9px;
-      }
-      h3 {
-        padding-top: 30px;
-      }
-      h4 {
-        color: #3d85c6;
-        font-size: 14px;
-        text-transform: capitalize;
-        font-weight: 600;
-        padding-top: 40px;
-      }
-      h5 {
-        padding-top: 5px;
-      }
-      ul {
-        padding-top: 12px;
-        margin-left: 25px;
-      }
-      li {
-        padding: 6px 0;
-      }
-      .no-list li {
-        list-style: none;
-      }
-
-      @media screen and (min-width: 600px) {
-        section {
-          flex-direction: row;
-        }
-        .l-cell {
-          max-width: 60%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <header class="col">
+      <div class="logo-div">
+        <a class="sans" href="https://training.zuri.team/"
+          ><img src="./img/index.png" alt="hng"
+        /></a>
+      </div>
+      <h1>HNG INTERNSHIP</h1>
+    </header>
     <main>
-       <div class="logo-div">
-          <a href="https://training.zuri.team/"><img src="./index.png" alt="hng"/></a>
-       </div>
       <section>
         <div class="cell l-cell">
           <h1 class="m-r header">UFUOMA OGHENECHOVWE</h1>
@@ -137,7 +29,9 @@
           <p>Benin, Nigeria.</p>
           <p>(+234) 701 446 5165</p>
           <p>
-            <a href="mailto:rukkiechowe@gmail.com"> rukkiechowe@gmail.com</a>
+            <a class="sans" href="mailto:rukkiechowe@gmail.com">
+              rukkiechowe@gmail.com</a
+            >
           </p>
         </div>
       </section>
@@ -218,13 +112,13 @@
           <h4 class="sans">PROJECTS</h4>
 
           <div class="m-r">
-            <a href="https://www.icompresser.com">
+            <a class="sans" href="https://www.icompresser.com">
               <h2>iCompresser</h2>
             </a>
             <p>A web application to compress images and also convert images.</p>
           </div>
           <div class="m-r">
-            <a href="https://www.kivifood.app">
+            <a class="sans" href="https://www.kivifood.app">
               <h2>Kivifood</h2>
             </a>
             <p>
@@ -233,7 +127,10 @@
             </p>
           </div>
           <div class="m-r">
-            <a href="https://rukkies-rest-countries-api-react.netlify.app/">
+            <a
+              class="sans"
+              href="https://rukkies-rest-countries-api-react.netlify.app/"
+            >
               <h2>Rest Countries Api</h2>
             </a>
             <p>
@@ -241,11 +138,15 @@
               in the world with their description.
             </p>
           </div>
-          <p class="top">
+          <div class="more">
             Visit my
-            <a class="c25" href="https://github.com/rukkiechovwe"> github </a>
+            <a href="https://github.com/rukkiechovwe">
+              <div class="git-div">
+                <img src="./img/GitHub-Mark-32px.png" alt="github" />
+              </div>
+            </a>
             to see more projects.
-          </p>
+          </div>
         </div>
         <div class="cell">
           <h4 class="sans">EDUCATION</h4>
@@ -282,5 +183,8 @@
         </div>
       </section>
     </main>
+    <footer>
+      <p>© Rukkies Resume.</p>
+    </footer>
   </body>
 </html>
